@@ -5,12 +5,12 @@ import io.cucumber.java.*;
 
 public class Hooks {
 
-    @Before
+    @BeforeAll
     public static void setUp() {
         AqualityServices.getBrowser().maximize();
     }
 
-    @After
+    @AfterAll
     public static void tearDown() {
         AqualityServices.getBrowser().quit();
     }
